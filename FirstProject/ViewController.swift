@@ -20,6 +20,8 @@ class ViewController: UIViewController {
        
         
         // Do any additional setup after loading the view, typically from a nib.
+        txtUser?.text=DataHolder.sharedInstance.sNick
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,8 +32,9 @@ class ViewController: UIViewController {
     @IBAction func clickLoginEvent(){
         print("Hola " + (txtUser?.text)!)
         
-        if txtUser?.text == "lucas" && txtPassword?.text == "pajares" {
+        if txtUser?.text == "Lucas" && txtPassword?.text == "pajares" {
             self.performSegue(withIdentifier: "transitionLogin", sender: self)
+            
         }
         
     }

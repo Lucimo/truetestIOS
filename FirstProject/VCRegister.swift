@@ -5,7 +5,7 @@
 //  Created by LUCAS PAJARES PRIETO on 3/4/18.
 //  Copyright © 2018 LUCAS PAJARES PRIETO. All rights reserved.
 //
-
+import Firebase
 import UIKit
 
 class VCRegister: UIViewController {
@@ -18,7 +18,7 @@ class VCRegister: UIViewController {
     @IBOutlet var btnCancelar:UIButton?
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+       txtUser?.text = DataHolder.sharedInstance.sNick
         // Do any additional setup after loading the view.
     }
 
@@ -27,7 +27,17 @@ class VCRegister: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func clickRegister(){
+        Auth.auth().createUser(withEmail: (txtUser?.text)!,
+        password:(txtPassword?.text)!){(user, error)in
+        if user != nil{
+            print ("Te registraste")
+            }
+        else{
+            print("error")
+            }
+        }
+    }
     /*
     // MARK: - Navigation
 

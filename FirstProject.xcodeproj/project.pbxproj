@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		034585A8AC524A14EF8AB74B /* Pods_FirstProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF4E4955A64B60D2D68B37CD /* Pods_FirstProject.framework */; };
+		33BFC2CB207CDBB50042290D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 33BFC2CA207CDBB50042290D /* GoogleService-Info.plist */; };
+		33BFC2CD207CE19B0042290D /* DataHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BFC2CC207CE19B0042290D /* DataHolder.swift */; };
 		33FB07922076290D00661779 /* ViewControllerTabla.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FB07912076290D00661779 /* ViewControllerTabla.swift */; };
 		33FB07942076410000661779 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FB07932076410000661779 /* TableViewCell.swift */; };
 		4D0C2FC12073ACDF004A9586 /* VCRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0C2FC02073ACDF004A9586 /* VCRegister.swift */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		33BFC2CA207CDBB50042290D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		33BFC2CC207CE19B0042290D /* DataHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHolder.swift; sourceTree = "<group>"; };
 		33FB07912076290D00661779 /* ViewControllerTabla.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTabla.swift; sourceTree = "<group>"; };
 		33FB07932076410000661779 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		4D0C2FC02073ACDF004A9586 /* VCRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCRegister.swift; sourceTree = "<group>"; };
@@ -75,12 +79,14 @@
 		4DE9E9A82063B74B00DF4D96 /* FirstProject */ = {
 			isa = PBXGroup;
 			children = (
+				33BFC2CA207CDBB50042290D /* GoogleService-Info.plist */,
 				4DE9E9C12063BFDF00DF4D96 /* FirstProject.entitlements */,
 				4DE9E9A92063B74B00DF4D96 /* AppDelegate.swift */,
 				4DE9E9AB2063B74B00DF4D96 /* ViewController.swift */,
 				4DE9E9AD2063B74C00DF4D96 /* Main.storyboard */,
 				4DE9E9B32063B74C00DF4D96 /* Assets.xcassets */,
 				4DE9E9B52063B74C00DF4D96 /* LaunchScreen.storyboard */,
+				33BFC2CC207CE19B0042290D /* DataHolder.swift */,
 				4DE9E9B82063B74C00DF4D96 /* Info.plist */,
 				4DE9E9B02063B74C00DF4D96 /* FirstProject.xcdatamodeld */,
 				4D0C2FC02073ACDF004A9586 /* VCRegister.swift */,
@@ -183,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DE9E9B72063B74C00DF4D96 /* LaunchScreen.storyboard in Resources */,
+				33BFC2CB207CDBB50042290D /* GoogleService-Info.plist in Resources */,
 				4DE9E9B42063B74C00DF4D96 /* Assets.xcassets in Resources */,
 				4DE9E9AF2063B74C00DF4D96 /* Main.storyboard in Resources */,
 			);
@@ -230,9 +237,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FirstProject/Pods-FirstProject-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -250,6 +264,7 @@
 				4D0C2FC12073ACDF004A9586 /* VCRegister.swift in Sources */,
 				4D6045FD207522FF0070F2A7 /* VCPrincipal.swift in Sources */,
 				4DE9E9B22063B74C00DF4D96 /* FirstProject.xcdatamodeld in Sources */,
+				33BFC2CD207CE19B0042290D /* DataHolder.swift in Sources */,
 				4DE9E9AA2063B74B00DF4D96 /* AppDelegate.swift in Sources */,
 				33FB07942076410000661779 /* TableViewCell.swift in Sources */,
 				33FB07922076290D00661779 /* ViewControllerTabla.swift in Sources */,

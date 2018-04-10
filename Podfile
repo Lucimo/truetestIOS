@@ -7,4 +7,5 @@ target 'FirstProject' do
 
   # Pods for FirstProject
 pod 'Firebase/Core'
+pod 'Firebase/Auth'
 end
