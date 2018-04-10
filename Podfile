@@ -6,5 +6,5 @@ target 'FirstProject' do
   use_frameworks!
 
   # Pods for FirstProject
-
+pod 'Firebase/Core'
 end
