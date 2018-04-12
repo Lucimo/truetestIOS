@@ -12,10 +12,12 @@ class DataHolder: NSObject {
    
     static let sharedInstance:DataHolder = DataHolder()
     var sNick:String = "Lucas"
+    var fireStoreDB:Firestore?
     
     func initFirebase(){
         FirebaseApp.configure()
+        fireStoreDB = Firestore.firestore()
     }
-    }
-    
+
+}
 

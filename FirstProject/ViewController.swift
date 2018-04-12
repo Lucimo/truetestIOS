@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Firebase
 class ViewController: UIViewController {
 
     
@@ -23,6 +23,8 @@ class ViewController: UIViewController {
         txtUser?.text=DataHolder.sharedInstance.sNick
         
     }
+   
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -42,4 +44,5 @@ class ViewController: UIViewController {
     
     
 }
+
 

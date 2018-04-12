@@ -23,16 +23,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Aceptar"/>
                                 <connections>
-                                    <segue destination="uOP-fB-7HM" kind="show" id="7Ox-xi-4Gg"/>
+                                    <action selector="clickRegister" destination="28r-3v-Zse" eventType="touchUpInside" id="VcB-Bx-L8k"/>
+                                    <segue destination="Efg-n4-RbY" kind="show" id="PLh-Yt-FL1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="css-NC-hKF">
                                 <rect key="frame" x="77" y="545" width="61" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Cancelar"/>
-                                <connections>
-                                    <segue destination="Efg-n4-RbY" kind="show" id="XHL-Z8-n27"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Registrate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bOR-I3-vlX">
                                 <rect key="frame" x="147" y="209" width="81" height="21"/>
@@ -75,6 +73,7 @@
                     </view>
                     <connections>
                         <outlet property="btnAceptar" destination="jrv-An-Qa4" id="jMX-su-Tje"/>
+                        <outlet property="btnCancelar" destination="css-NC-hKF" id="fwc-I2-xs5"/>
                         <outlet property="txtEmail" destination="qVH-kD-vPf" id="w4U-Br-eKG"/>
                         <outlet property="txtPassword" destination="fue-ea-8V1" id="EGW-QZ-aPe"/>
                         <outlet property="txtRePassword" destination="0rj-A4-RFq" id="MtD-oM-Jpb"/>
@@ -99,7 +98,6 @@
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="clickLoginEvent" destination="Efg-n4-RbY" eventType="touchUpInside" id="nPs-x4-fnM"/>
-                                    <segue destination="uOP-fB-7HM" kind="show" id="prw-tF-RWM"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCG-VI-zva">
@@ -271,7 +269,4 @@
             <point key="canvasLocation" x="818" y="115"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="prw-tF-RWM"/>
-    </inferredMetricsTieBreakers>
 </document>
