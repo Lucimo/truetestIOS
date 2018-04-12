@@ -61,7 +61,7 @@
 		4DE9E99D2063B74B00DF4D96 = {
 			isa = PBXGroup;
 			children = (
-				4DE9E9A82063B74B00DF4D96 /* FirstProject2 */,
+				4DE9E9A82063B74B00DF4D96 /* FirstProject */,
 				4DE9E9A72063B74B00DF4D96 /* Products */,
 				4DE9E9BE2063BEF600DF4D96 /* Frameworks */,
 				AB3EE5A12EE83DD7CC06D72F /* Pods */,
@@ -76,7 +76,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4DE9E9A82063B74B00DF4D96 /* FirstProject2 */ = {
+		4DE9E9A82063B74B00DF4D96 /* FirstProject */ = {
 			isa = PBXGroup;
 			children = (
 				33BFC2CA207CDBB50042290D /* GoogleService-Info.plist */,
@@ -94,7 +94,7 @@
 				33FB07912076290D00661779 /* ViewControllerTabla.swift */,
 				33FB07932076410000661779 /* TableViewCell.swift */,
 			);
-			path = FirstProject2;
+			path = FirstProject;
 			sourceTree = "<group>";
 		};
 		4DE9E9BE2063BEF600DF4D96 /* Frameworks */ = {
@@ -165,7 +165,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4DE9E9A12063B74B00DF4D96 /* Build configuration list for PBXProject "FirstProject2" */;
+			buildConfigurationList = 4DE9E9A12063B74B00DF4D96 /* Build configuration list for PBXProject "FirstProject" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -449,7 +449,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4DE9E9A12063B74B00DF4D96 /* Build configuration list for PBXProject "FirstProject2" */ = {
+		4DE9E9A12063B74B00DF4D96 /* Build configuration list for PBXProject "FirstProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4DE9E9B92063B74C00DF4D96 /* Debug */,
