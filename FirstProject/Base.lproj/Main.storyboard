@@ -39,14 +39,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="user" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qVH-kD-vPf">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qVH-kD-vPf">
                                 <rect key="frame" x="112" y="259" width="151" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bcf-N4-zWw">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="user" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bcf-N4-zWw">
                                 <rect key="frame" x="112" y="318" width="151" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -74,10 +74,10 @@
                     <connections>
                         <outlet property="btnAceptar" destination="jrv-An-Qa4" id="jMX-su-Tje"/>
                         <outlet property="btnCancelar" destination="css-NC-hKF" id="fwc-I2-xs5"/>
-                        <outlet property="txtEmail" destination="qVH-kD-vPf" id="w4U-Br-eKG"/>
+                        <outlet property="txtEmail" destination="bcf-N4-zWw" id="a89-Ur-PxV"/>
                         <outlet property="txtPassword" destination="fue-ea-8V1" id="EGW-QZ-aPe"/>
                         <outlet property="txtRePassword" destination="0rj-A4-RFq" id="MtD-oM-Jpb"/>
-                        <outlet property="txtUser" destination="bcf-N4-zWw" id="1Jh-q7-wR7"/>
+                        <outlet property="txtUser" destination="qVH-kD-vPf" id="v6F-HJ-yzS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gYk-Pf-Nu5" userLabel="First Responder" sceneMemberID="firstResponder"/>

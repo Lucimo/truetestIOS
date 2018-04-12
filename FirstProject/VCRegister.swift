@@ -29,10 +29,10 @@ class VCRegister: UIViewController {
     
     @IBAction func clickRegister(){
         Auth.auth().createUser(withEmail: (txtUser?.text)!,
-        password:(txtPassword?.text)!){(user, error)in
-        if user != nil{
+        password:(txtPassword?.text)!){(email, error)in
+        if email != nil{
             print ("Te registraste")
-            DataHolder.sharedInstance.fireStoreDB?.collection("Perfiles").document((user?.uid)!).setData(["nombre":self.txtUser?.text, "email":self.txtPassword?.text ])
+            DataHolder.sharedInstance.fireStoreDB?.collection("Perfiles").document((email?.uid)!).setData(["email":self.txtUser?.text, "nombre":self.txtEmail?.text ])
             }
         else{
             print(error!)
