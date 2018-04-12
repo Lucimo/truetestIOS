@@ -32,7 +32,7 @@ class VCRegister: UIViewController {
         password:(txtPassword?.text)!){(user, error)in
         if user != nil{
             print ("Te registraste")
-            DataHolder.sharedInstance.fireStoreDB?.collection("Perfiles").document((user?.uid)!).setData(["first": "yony", "last": "BM", "nacimiento": 1500])
+            DataHolder.sharedInstance.fireStoreDB?.collection("Perfiles").document((user?.uid)!).setData(["nombre":self.txtUser?.text, "email":self.txtPassword?.text ])
             }
         else{
             print(error!)
