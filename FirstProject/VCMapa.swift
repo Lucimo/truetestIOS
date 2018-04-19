@@ -8,11 +8,18 @@
 
 import UIKit
 import MapKit
-class VCMapa: UIViewController {
+import CoreLocation
+class VCMapa: UIViewController, CLLocationManagerDelegate{
     @IBOutlet var miMapa:MKMapView?
+    var locationManager:CLLocationManager?
     override func viewDidLoad() {
         super.viewDidLoad()
 self.agregarPin(titulo: "HOLA", latitude: 42, longitud: -3)
+        locationManager = CLLocationManager()
+        locationManager?.delegate = self
+        locationManager?.requestAlwaysAuthorization()
+        locationManager?.startUpdatingLocation()
+        
         // Do any additional setup after loading the view.
     }
 
@@ -29,7 +36,17 @@ self.agregarPin(titulo: "HOLA", latitude: 42, longitud: -3)
         miMapa?.addAnnotation(miPin)
     }
     
-
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+    print(locations[0])
+        self.nuevaRegionMapa(lat : locations[0].coordinate.latitude, longitud: locations[0].coordinate.longitude)
+    }
+    func nuevaRegionMapa(lat: Double, longitud lon:Double){
+        let puntoCentro:CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: lat, longitude: lon)
+        
+        let miSpan:MKCoordinateSpan = MKCoordinateSpan(latitudeDelta : 0.01, longitudeDelta: 0.01)
+        let miRegion:MKCoordinateRegion = MKCoordinateRegion(center: puntoCentro, span: miSpan)
+        miMapa?.setRegion(miRegion, animated: true)
+    }
     /*
     // MARK: - Navigation
 

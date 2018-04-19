@@ -1,7 +1,7 @@
 //
 //  ViewController.swift
 //  FirstProject
-//
+// Protocolos sirven para que te obliguen a usar sus metodos
 //  Created by LUCAS PAJARES PRIETO 22/3/18.
 //  Copyright © 2018 LUCAS PAJARES PRIETO. All rights reserved.
 //

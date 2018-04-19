@@ -40,6 +40,16 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Se donde vives</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Se donde vives</string>
+	<key>NSLocationUsageDescription</key>
+	<string>Se donde vives</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Se donde vives</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string></string>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
