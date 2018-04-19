@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Efg-n4-RbY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qyp-8q-SoG">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -178,7 +178,7 @@
         <!--Map-->
         <scene sceneID="x2J-7y-ZjS">
             <objects>
-                <viewController title="Map" id="qyp-8q-SoG" sceneMemberID="viewController">
+                <viewController title="Map" id="qyp-8q-SoG" customClass="VCMapa" customModule="FirstProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1G2-Ez-hXl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -192,6 +192,9 @@
                         <viewLayoutGuide key="safeArea" id="ik5-gj-zbt"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" id="gMe-67-8g6"/>
+                    <connections>
+                        <outlet property="miMapa" destination="iNB-ce-4Wa" id="eWL-DX-IAs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t7a-JI-ozB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		034585A8AC524A14EF8AB74B /* Pods_FirstProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF4E4955A64B60D2D68B37CD /* Pods_FirstProject.framework */; };
+		335837D1208895E300CA6C17 /* VCMapa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335837D0208895E300CA6C17 /* VCMapa.swift */; };
 		33BFC2CB207CDBB50042290D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 33BFC2CA207CDBB50042290D /* GoogleService-Info.plist */; };
 		33BFC2CD207CE19B0042290D /* DataHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BFC2CC207CE19B0042290D /* DataHolder.swift */; };
 		33FB07922076290D00661779 /* ViewControllerTabla.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FB07912076290D00661779 /* ViewControllerTabla.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		335837D0208895E300CA6C17 /* VCMapa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCMapa.swift; sourceTree = "<group>"; };
 		33BFC2CA207CDBB50042290D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		33BFC2CC207CE19B0042290D /* DataHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHolder.swift; sourceTree = "<group>"; };
 		33FB07912076290D00661779 /* ViewControllerTabla.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTabla.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				4D0C2FC02073ACDF004A9586 /* VCRegister.swift */,
 				4D6045FC207522FF0070F2A7 /* VCPrincipal.swift */,
 				33FB07912076290D00661779 /* ViewControllerTabla.swift */,
+				335837D0208895E300CA6C17 /* VCMapa.swift */,
 				33FB07932076410000661779 /* TableViewCell.swift */,
 			);
 			path = FirstProject;
@@ -277,6 +280,7 @@
 				4DE9E9AC2063B74B00DF4D96 /* ViewController.swift in Sources */,
 				4D0C2FC12073ACDF004A9586 /* VCRegister.swift in Sources */,
 				4D6045FD207522FF0070F2A7 /* VCPrincipal.swift in Sources */,
+				335837D1208895E300CA6C17 /* VCMapa.swift in Sources */,
 				4DE9E9B22063B74C00DF4D96 /* FirstProject.xcdatamodeld in Sources */,
 				33BFC2CD207CE19B0042290D /* DataHolder.swift in Sources */,
 				4DE9E9AA2063B74B00DF4D96 /* AppDelegate.swift in Sources */,
